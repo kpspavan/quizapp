@@ -17,7 +17,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/productlist.git
+git clone (https://github.com/kpspavan/quizapp.git)
 
 ## Change into the project directory
 
