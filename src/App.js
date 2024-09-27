@@ -1,28 +1,12 @@
-import React, { useState } from "react";
+import React from 'react'
 
-import CustomWebcam from "./components/CustomWebcam/CustomWebcam"
-import ImageGallery from "./components/CustomWebcam/Imagegallery"
-import "./App.css";
-
-
-function App() {
-  const [capturedImages, setCapturedImages] = useState([]);
-  const handleDelete = (index) => {
-    setCapturedImages((prevCapturedImages) => prevCapturedImages.filter((_, i) => i !== index));
-  };
-
-  const handleCapture = (imageSrc) => {
-    setCapturedImages([...capturedImages, imageSrc]);
-  };
-
+ const App = () => {
   return (
-    <div className="App">
-      <CustomWebcam onCapture={handleCapture} />
-      <ImageGallery onDelete={handleDelete} images={capturedImages} />
+    <div>
+      <h1>Hello world</h1>
     </div>
-  );
+  )
 }
 
 
-
-export default App;
+export default App
